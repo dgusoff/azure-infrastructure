@@ -5,6 +5,8 @@
 
 [docs](https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest)
 
+[mongoDB docs](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/mongodb-introduction)
+
 open shell
 
 `docker run -it mcr.microsoft.com/azure-cli`
