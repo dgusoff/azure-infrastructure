@@ -3,6 +3,8 @@
 
 ## create via CLI
 
+[docs](https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest)
+
 open shell
 
 `docker run -it mcr.microsoft.com/azure-cli`
@@ -23,10 +25,18 @@ create a resource group
 
 `az group create -l northcentralus -n cosmos`
 
-create a cosmosdb account
+check if a cosmos db account exists
+
+`az cosmosdb check-name-exists --name MyCosmosDBDatabaseAccount`
 
 
-tbd
+create a cosmos DB account
+
+`az cosmosdb create --name MyCosmosDBDatabaseAccount --resource-group cosmos --subscription MySubscription`
+
+delete an azure cosmos db account
+
+`az cosmosdb delete --name MyCosmosDBDatabaseAccount --resource-group cosmos`
 
 create a cosmos DB Mongo instance
 
