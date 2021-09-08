@@ -7,6 +7,8 @@
 
 [mongoDB docs](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/mongodb-introduction)
 
+[node quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb/create-mongodb-nodejs#sign-in-to-azure)
+
 open shell
 
 `docker run -it mcr.microsoft.com/azure-cli`
@@ -43,3 +45,14 @@ delete an azure cosmos db account
 create a cosmos DB Mongo instance
 
 `az cosmosdb mongodb database create --account-name mongo-account  --name my-cosmos --resource-group cosmos`
+
+
+## create mogo cosmosDB - walkthrough
+
+`az group create -l northcentralus -n cosmos`
+
+create the account(account name must be globally unique)
+
+`az cosmosdb create --name mongo-account --resource-group cosmos --kind MongoDB`
+
+
