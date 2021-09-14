@@ -47,7 +47,7 @@ create a cosmos DB Mongo instance
 `az cosmosdb mongodb database create --account-name mongo-account  --name my-cosmos --resource-group cosmos`
 
 
-## create mogo cosmosDB - walkthrough
+## create mongo cosmosDB - walkthrough
 
 `az group create -l northcentralus -n cosmos`
 
