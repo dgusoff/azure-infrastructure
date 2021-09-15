@@ -19,4 +19,16 @@ az network nsg rule create --nsg-name db2 -g db2 --name allow-db2 --description 
 az network nsg rule create --nsg-name db2 -g db2 --name allow-ssh --description "DB2" --protocol tcp --priority 101 --destination-port-range "22"
 ````
 
+create the VM
 
+`az vm create --resource-group db2 --name db2 --image RedHat:RHEL:7-RAW-CI:latest --size Standard_DS2_v2 --admin-username rhel --data-disk-sizes-gb 10 10 10 10 --nsg db2  --no-wait`
+
+create with custom script
+
+````
+az vm create --resource-group db2 \
+--name db2 --image RedHat:RHEL:7-RAW-CI:latest \
+--size Standard_DS2_v2 --admin-username rhel \
+--data-disk-sizes-gb 10 10 10 10 --nsg db2 \
+--custom-data ./db2_setup.sh --no-wait
+````
