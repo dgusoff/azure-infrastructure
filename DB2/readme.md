@@ -5,6 +5,13 @@ article: https://medium.com/cooking-with-azure/deploying-db2-in-azure-on-rhel-72
 arm temmplate: https://github.com/ms-cse/azure-quickstart-templates/tree/101-db2-rhel-raid10/101-db2-rhel-raid10
 
 
+## docker 
+
+https://www.ibm.com/docs/en/db2/11.5?topic=system-windows
+
+
+
+
 ## via CLI
 
 `docker run -it mcr.microsoft.com/azure-cli`
