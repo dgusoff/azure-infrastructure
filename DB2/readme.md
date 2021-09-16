@@ -9,6 +9,18 @@ arm temmplate: https://github.com/ms-cse/azure-quickstart-templates/tree/101-db2
 
 https://www.ibm.com/docs/en/db2/11.5?topic=system-windows
 
+or
+
+https://www.ibm.com/support/producthub/db2/docs/content/SSEPGG_11.5.0/com.ibm.db2.luw.db2u_openshift.doc/doc/t_install_db2CE_win_img.html
+
+````
+docker run -itd --name mydb23 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=pass@word1 -e DBNAME=testdb -v /c/docker/db2:/database ibmcom/db2
+
+docker logs -f mydb23
+
+docker exec -ti mydb23 bash -c "su - db2inst1"
+````
+
 
 
 
