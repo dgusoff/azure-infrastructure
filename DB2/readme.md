@@ -13,6 +13,9 @@ or
 
 https://www.ibm.com/support/producthub/db2/docs/content/SSEPGG_11.5.0/com.ibm.db2.luw.db2u_openshift.doc/doc/t_install_db2CE_win_img.html
 
+
+https://datageek.blog/en/2021/07/22/how-to-use-docker-on-your-local-machine-for-dbas/
+
 ````
 docker run -itd --name mydb23 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=pass@word1 -e DBNAME=testdb -v /c/docker/db2:/database ibmcom/db2
 
