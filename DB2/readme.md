@@ -31,6 +31,10 @@ docker exec -ti mydb23 bash -c "su - db2inst1"
 ````
 
 
+## using ef core
+
+https://community.ibm.com/community/user/hybriddatamanagement/blogs/michelle-betbadal1/2020/04/29/code-first-with-ibm-entity-framework-core
+
 
 
 ## via CLI
