@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=RMit22xzabY&list=PLCkYH48qFgSKFyWoWyFlFULrDf35hE
 
 https://vladmihalcea.com/how-to-install-db2-express-c-on-docker-and-set-up-the-jdbc-connection-properties/
 
+https://www.db2tutorial.com/getting-started/db2-connect-to-database/
+
 ````
 docker run -itd --name mydb23 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=pass@word1 -e DBNAME=testdb -v /c/docker/db2:/database ibmcom/db2
 
