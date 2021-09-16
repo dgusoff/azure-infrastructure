@@ -18,6 +18,8 @@ https://datageek.blog/en/2021/07/22/how-to-use-docker-on-your-local-machine-for-
 
 https://www.youtube.com/watch?v=RMit22xzabY&list=PLCkYH48qFgSKFyWoWyFlFULrDf35hEcxP
 
+https://vladmihalcea.com/how-to-install-db2-express-c-on-docker-and-set-up-the-jdbc-connection-properties/
+
 ````
 docker run -itd --name mydb23 --privileged=true -p 50000:50000 -e LICENSE=accept -e DB2INST1_PASSWORD=pass@word1 -e DBNAME=testdb -v /c/docker/db2:/database ibmcom/db2
 
